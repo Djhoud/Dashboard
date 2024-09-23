@@ -1,0 +1,11 @@
+.dashboard-layout {
+    background-color: var(--bg-color); /* Adicione variáveis conforme necessário */
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+  }
+   

@@ -1,0 +1,190 @@
+/* Estilos Gerais */
+.dashboardContainer {
+    flex-grow: 1;
+    padding: 32px;
+    background: #f4f7fa; /* Fundo claro e neutro */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.dashboardHeader {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    background: linear-gradient(90deg, #2980b9, #8e44ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Grid de Cartões de Resumo */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Cartões de Resumo */
+.summaryCard {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    position: relative;
+}
+
+.summaryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.summaryCard h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.summaryCard p {
+    font-size: 34px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 8px;
+}
+
+.summaryCard .change {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.summaryCard .change.positive {
+    color: #27ae60; /* Verde mais vibrante */
+}
+
+.summaryCard .change.negative {
+    color: #e74c3c; /* Vermelho mais forte */
+}
+
+/* Estilo da Tabela de Receitas e Despesas */
+.incomeExpenseTable {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.incomeExpenseTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.incomeExpenseTable th,
+.incomeExpenseTable td {
+    padding: 16px;
+    text-align: left;
+}
+
+.incomeExpenseTable th {
+    background-color: #f0f4f8;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.incomeExpenseTable tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.incomeExpenseTable td {
+    color: #34495e;
+}
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.modalHeader {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 16px;
+}
+
+.modalCloseButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Botões */
+.buttonPrimary {
+    background-color: #3498db; /* Azul forte */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttonPrimary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.buttonSecondary {
+    background-color: #bdc3c7; /* Cinza claro */
+    color: #2c3e50;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttonSecondary:hover {
+    background-color: #95a5a6;
+    transform: translateY(-2px);
+}

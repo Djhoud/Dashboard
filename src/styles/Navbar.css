@@ -1,0 +1,36 @@
+.header {
+    background-color: #24292e; /* Cor semelhante ao GitHub */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove qualquer margem */
+    padding: 0; /* Remove padding padrão */
+  }
+  
+  .nav-container {
+    max-width: 7xl;
+    margin: 0 auto; /* Centraliza a navbar */
+    padding: 0 1rem; /* Padding horizontal */
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente */
+    height: 60px; /* Define uma altura fixa */
+  }
+  
+  .nav-link {
+    color: #e0e0e0; /* Cor dos links */
+    
+    padding: 8px 16px; /* Adiciona padding aos links */
+    border-radius: 4px; /* Bordas arredondadas */
+  }
+  
+  .nav-link:hover {
+    color: #ffffff; /* Cor de hover dos links */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+  }
+  
+  .mobile-toggle {
+    color: #e0e0e0; /* Cor do botão de toggle */
+  }
+  

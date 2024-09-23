@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb; /* Cor de linha para o tema claro */
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2); /* Cor de linha para o tema escuro */
+}
+
+.borderBlack {
+  @apply border border-black/10; /* Borda leve preta */
+}
+
+/* Personalizações de tema */
+:root {
+  --bg-primary: #1E1E2F; /* Fundo principal */
+  --bg-secondary: #2C2C3A; /* Fundo secundário */
+  --text-primary: #FFFFFF; /* Texto principal */
+  --text-secondary: #B0B0B0; /* Texto secundário */
+  --highlight: #3A8FFF; /* Cor de destaque */
+  --border-color: #4A4A6A; /* Cor das bordas */
+}
+
+/* Aplicando o tema nas classes do Tailwind */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.border-custom {
+  border-color: var(--border-color);
+}
+
+a {
+  color: var(--highlight);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #4DA8FF; /* Azul mais claro ao passar o mouse */
+}

@@ -1,0 +1,9 @@
+.income-crud-container {
+    padding: 1rem;
+}
+
+.income-crud-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
